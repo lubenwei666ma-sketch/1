@@ -1,155 +1,194 @@
 # 林清月 · 角色建模AI生图提示词（两版）
 
 > **用途**：生成林清月的角色定妆照/角色卡，用于AI生视频时的人物一致性锁定（Reference图）
-> **风格定位**：超写实顶美·电影海报级·Vogue大片质感
-> **版本数**：2版（清冷御姐版 + 温柔知性版）
-> **使用工具**：即梦/FLUX/MJ v6/Midjourney
-> **目标**：每张图都能让人停留3秒以上的"破圈级颜值"
+> **风格定位**：中国当代顶级颜值审美 + 韩系时尚高级感
+> **参考坐标**：刘诗诗的清冷古典 + 章若楠的氧气感 + Jennie（Blackpink）的高级冷感 + 张元英（IVE）的精致脸蛋 + 白鹿的鹿系眼
+> **目标**：抖音/小红书"破圈级"颜值，让人停留3秒+保存收藏的"中式新女神"
 
 ---
 
 ## 📐 通用骨架描述（两版共用·绝对锁定）
 
-### 不可变更的核心特征
+### 中式顶级颜值核心特征（白瘦幼+高级感+少女感）
 
 ```
-东亚女性，27岁，身高168cm
-面部骨相：
-  - 标准鹅蛋脸（脸长14.5cm，脸宽13cm，黄金比例1.115）
-  - 三庭五眼比例完美（上中下三庭等长，五眼平均分布）
-  - 颧骨适中不外扩，下颌角圆润不显方
-  - 下巴尖呈柔和的"V"线条（不是网红尖锥脸）
+东亚女性，年龄定位"看不出具体年纪的25岁"，身高168cm
+（关键：要呈现"既有少女的清纯感又有女人的高级感"的双重质感）
 
-五官精确描述：
-  - 眉：天生柳叶眉，眉峰柔和不锋利，眉色比发色浅一档
-  - 眼：标准凤眼，眼裂长3.0cm，内眼角向上微挑，瞳孔深棕色，眼白清澈带极淡蓝调
-  - 双眼皮：内双偏外双（约5mm褶宽），睁眼时形成自然的"开扇形"
-  - 睫毛：上睫毛长9-10mm根根分明且自然弯翘，下睫毛短而清晰
-  - 鼻：山根挺直但不夸张（高度0.8cm），鼻梁直线型，鼻头小巧呈圆润水滴形
-  - 唇：天生淡粉色，上唇较薄下唇较厚（1:1.3比例），唇峰清晰有M线条
-  - 耳：标准贝壳耳，耳垂饱满（约1.2cm）
+面部骨相（中式审美核心）：
+  - 标准小鹅蛋脸（脸长13cm，脸宽11cm，比例1.18，比欧美脸更短更圆润）
+  - 高颅顶（头顶到发际线的距离占头部比例30%以上，这是顶级颜值的关键）
+  - 短下颌（下巴到颈部的过渡线极美）
+  - 颧骨平柔（不外扩不凸出，呈现"婴儿肥+高级感"的微妙平衡）
+  - 下颌角圆润内收（不是网红尖锥，是天然的"鹅蛋下颌线"）
+  - 下巴尖呈柔和的"短V"（顶级中式美人标准）
+  - 三庭五眼比例完美但中庭略短（呈现幼龄感+少女感）
 
-肤质（关键）：
-  - 健康的瓷白色（不是病态白也不是奶白），呈现自然的"白里透粉"
-  - 真实毛孔可见（鼻翼T区）但不粗大
-  - 面部细绒毛在侧光下隐约可见
-  - 苹果肌处有极淡的天然粉调
-  - 完全无瑕疵磨皮感
+五官精确描述（韩系+中式）：
+  - 眉：天然新月眉（不是柳叶眉，更年轻更日常），眉峰柔和几乎平直，眉毛较粗呈现"野生眉"质感（不是修过头的纤细眉），颜色比发色浅一档呈现淡棕黑
+  - 眼：标准杏眼（不是凤眼！更圆更大更有少女感），眼裂长2.8cm，眼形呈"猫眼+鹿眼"的混合，瞳孔深棕色带极淡蜜糖色（不是纯黑）
+  - 双眼皮：天然双内双（4mm褶宽，比欧美双眼皮窄但更精致），睁眼时形成自然的"水汪汪"感
+  - 卧蚕：明显的天然卧蚕（笑起来更明显，是中式美人的灵魂），卧蚕宽度约3mm
+  - 睫毛：上睫毛长10mm根根分明且天然向上翘（不是浓密假睫毛感），下睫毛短而清晰呈"淡密"
+  - 鼻：山根适中（不要欧美的高山根，要中式的"恰到好处"），鼻头小巧圆润如珠（像Jennie的鼻头），鼻翼小而内收
+  - 唇：自然花瓣唇（不是过度饱满的欧美唇），上下唇厚度1:1.2，唇色淡粉带橘调（自然血色），唇珠明显呈现"M字"
+  - 人中：长度适中且清晰（不是过短的童颜也不是过长的成熟感），人中沟纹优美
+  - 耳：贝壳耳，耳垂饱满呈水滴形（开运耳）
 
-身材比例：
-  - 肩宽38cm（窄而美）
-  - 腰围64cm
-  - 黄金腿长身长比（腿长占总身高54%）
-  - 锁骨清晰呈"蝴蝶骨"形状
-  - 颈部细长有天鹅颈线条
+肤质（关键·要"奶油肌"不是"瓷器肌"）：
+  - "奶油肌"质感：白皙中带温度（不是冷白皮，是带粉调的暖白皮）
+  - 皮肤呈现"果冻感"+"水光感"+"弹润感"
+  - 真实毛孔可见（仅T区，极细致）但整体呈现"婴儿般的细腻"
+  - 颧骨苹果肌处有天然的"高原红"（极淡的粉调，约5%饱和度）
+  - 鼻尖、唇珠、下颌点处有自然的"水光"（不是油腻是健康水润）
+  - 完全无瑕疵磨皮感但要有"水煮蛋"般的光滑过渡
+
+身材比例（顶级身材标准）：
+  - 肩宽36cm（窄肩+直角肩+蝴蝶骨）
+  - 锁骨深邃如"两条美人沟"（中式美人核心）
+  - 腰围62cm（A4腰但不要刻意夸张）
+  - 黄金腿长身长比（腿长占总身高55%）
+  - 颈部修长有"天鹅颈"线条
+  - 体重维持BMI 18.5左右（白瘦幼但不是病态瘦）
 ```
 
 ### 反向约束（必须避免的AI生图通病）
 
 ```
-- 不要磨皮塑料感肌肤（要保留真实毛孔与绒毛）
-- 不要过度网红化（不要过尖下巴/过大眼睛/过翘睫毛）
-- 不要过曝高光（鼻尖/颧骨高光要哑光过渡）
-- 不要HDR过饱和（皮肤要低饱和自然色）
-- 不要美颜滤镜感（去除Beauty Plus/SnapSeed风格）
-- 不要韩系欧巴妆（不要厚粉底+大眼镜片+假睫毛）
-- 不要AI典型的对称感僵硬（左右脸要有微妙不对称）
-- 不要广告片闪光灯硬光（要电影级柔和单一主光源）
+- 不要欧美骨相（不要高鼻梁/深眼窝/方下颌/锐利颧骨）
+- 不要油画感（去除厚涂感、Vogue古典封面感）
+- 不要35+成熟御姐脸（要"看不出年纪的高级感"）
+- 不要网红整容脸（不要尖锥下巴/欧式平行双眼皮/玻尿酸唇）
+- 不要韩系厚妆（要"伪素颜"的高级氧气感）
+- 不要磨皮塑料（要保留毛孔但呈现奶油肌）
+- 不要HDR过曝（不要广告片高光）
+- 不要过度饱和（中式审美要低饱和高级感）
+- 不要凤眼（凤眼太成熟太古典，要杏眼+鹿系眼的混合）
+- 不要刻意性感（要"清纯里藏着高级"的女神感）
 ```
 
 ---
 
-## 🎭 第一版 · 清冷御姐版（QINGYUE_QUEEN）
+## 🌸 第一版 · 高级清冷版（QINGYUE_ICY_GODDESS）
 
-> **定位**：叶氏集团副总·商业精英·御姐天花板
-> **氛围词**：清冷、矜贵、距离感、上位者、不容侵犯
-> **参考气质**：刘亦菲（《梦华录》赵盼儿）+ 高圆圆（《单身男女》）+ Vogue大片御姐感
+> **定位**：抖音爆款"白瘦幼+高级感"中式女神 / 韩系冷感时尚穿搭
+> **氛围词**：清冷、高级、自带女主光环、"破圈神颜"
+> **参考坐标**：刘诗诗（《步步惊心》清冷感）+ Jennie Kim（Blackpink）的高级冷艳 + 章若楠的氧气感 + 张元英的"骨相天花板"
+> **使用场景**：商务戏/红毯戏/正装场景/朋友圈封面级
 
-### 完整提示词（电影海报版）
+### 完整提示词（小红书爆款级）
 
 ```
-一张超写实电影级人像摄影杰作，主角是一位27岁东亚女性。
+一张超写实顶级颜值人像摄影，主角是一位看起来既有少女感又有高级感的25岁中国东亚女性。
 
-【人物核心描述】
-她有着完美的鹅蛋脸轮廓（脸长14.5cm，宽13cm的黄金比例），
-天生柳叶眉（眉峰柔和不锋利，眉色比发色浅一档），
-标准凤眼（眼裂3.0cm，内眼角微挑，瞳孔深棕色，眼白带极淡蓝调），
-内双偏外双的眼皮形成5mm自然褶宽，
-长睫毛根根分明自然弯翘约9mm，
-山根挺直高度0.8cm的精致鼻梁，
-鼻头小巧呈圆润水滴形，
-天生淡粉色双唇（上薄下厚1:1.3比例，唇峰M线条清晰）。
+【人物核心描述·中式骨相天花板】
+她有着完美的小鹅蛋脸（脸长13cm宽11cm的中式黄金比例，比欧美脸更短更圆润），
+高颅顶（头顶到发际线占头部30%，这是顶级颜值密码），
+短下颌+鹅蛋下颌线（不是网红尖锥下巴），
+颧骨平柔不外扩（呈现"婴儿肥+高级感"的双重质感），
+下巴尖呈柔和的短V（顶级中式美人标准）。
 
-肤质是真实的瓷白色（白里透粉），
-鼻翼T区可见自然毛孔，
-面部细绒毛在侧光下隐约可见，
-苹果肌有极淡的天然粉调，
-完全无磨皮塑料感。
+【五官·中式+韩系混合美学】
+天然野生新月眉（眉色淡棕黑，眉峰柔和几乎平直，比柳叶眉更年轻日常），
+标准杏眼+鹿系眼混合（眼裂2.8cm，圆润有神，瞳孔深棕带极淡蜜糖色），
+天然双内双4mm褶宽（比欧美双眼皮更精致），
+明显的天然卧蚕（3mm宽，笑起来超灵动·中式美人的灵魂），
+长睫毛10mm天然向上翘（不是假睫毛感），
+中式适中山根+小巧圆润珠形鼻头（像Jennie的鼻头），
+天然花瓣唇（不是欧美饱满唇，唇色淡粉带橘调，唇珠M字明显），
+长度适中的清晰人中。
 
-【发型】
-齐肩黑色直发（自然垂顺），分中缝设计，
-两侧鬓角丝束自然垂落锁骨处，
-发丝在光下呈现真实的健康光泽（不是塑料反光）。
+【肤质·奶油肌·韩系氧气感】
+她的皮肤是顶级"奶油肌"质感——
+白皙中带温暖的粉调（暖白皮非冷白皮），
+呈现极致的"果冻感+水光感+弹润感"（像韩国idol的滤镜真实化），
+鼻尖、唇珠、下颌点处有自然水润高光（不是油腻），
+苹果肌有天然的5%粉调（婴儿般的高原红），
+T区可见极细致毛孔但整体如水煮蛋般光滑过渡，
+完全无瑕疵磨皮感但呈现"伪素颜"的高级氧气质感。
 
-【表情·核心气质】
-她正面微微偏左45度对着镜头，下巴微抬呈现轻微的俯视感（约2度），
-凤眼半阖，眼神清冷锐利如出鞘短剑，
-双唇紧抿成一条平静的直线（嘴角既不上扬也不下垂），
-眉心无皱（绝对的内心平静），
-整个面部表情透出一种"不容侵犯的高傲"——
-不是刻意的冷艳摆拍，而是天生上位者的从容威严。
+【发型·韩系慵懒高级】
+她有一头乌黑浓密的长直发（长度到锁骨下5cm），
+分中缝设计但不是死板的中分（一边稍多一边稍少的"慵懒中分"），
+发尾呈微微的内扣弧度（韩系空气感发型），
+两侧鬓角有几缕碎发自然垂落到颧骨位置（修饰脸型的"心机碎发"），
+发丝在光下呈现真实的健康哑光黑色（不是塑料反光也不是死黑色），
+头顶发根处自然蓬松（不贴头皮，显高颅顶）。
 
-【服装】
-身着一套极致剪裁的深酒红色丝绒高领长款连衣裙，
-高领紧贴天鹅颈线条，胸口位置有一枚小巧的祖母绿胸针，
-丝绒面料在光线下呈现深邃的暗光泽（不是廉价的反光），
-肩线锋利干练，腰线收紧凸显窄腰，
-长袖到手腕处收口。
+【表情·清冷高级感】
+她正面微微偏右30度对着镜头（不完全正脸，更上镜），
+下巴微微内收（不是抬下巴的傲气，是中式美人的端庄），
+杏眼平视镜头但带着一丝"看不见你"的疏离感，
+眼神呈现"清冷+空灵"的双重感（像在思考什么但又什么都不在想），
+嘴角自然放松呈现极淡的微笑（嘴角上扬不超过2mm，是"心情好"的自然状态而非刻意笑），
+整个面部表情透出一种"她明明那么美却毫不自知"的高级氛围感——
+不是刻意的冷艳，而是天生女主光环的从容，
+完全的"杀人于无形"的氛围美。
 
-【饰品】
-左耳戴一只单颗祖母绿耳钉（绿色与红裙形成宝石级对比），
-右手无名指戴一枚白金极简戒指（无大宝石），
-左腕一只Cartier Love手镯（玫瑰金低调款）。
+【服装·韩系时尚高级感】
+她身着一件极简剪裁的奶油白色羊绒西装外套（韩系oversized版型，比她的肩宽多5cm），
+内搭一件淡米色丝质吊带衫（露出锁骨深沟+蝴蝶骨），
+下身（画面只取上半身可不出现）是同色系直筒西装裤，
+整套穿搭呈现"韩系正装+慵懒感"的Olive Young时尚博主穿搭。
+
+【饰品·韩系小心机】
+左耳戴一只极简珍珠耳钉（直径5mm，单颗淡水珍珠），
+右耳戴一只小型金色耳环（细圆圈款，与左耳形成不对称美），
+颈间无项链（保持锁骨深沟的视觉重点），
+左手无名指戴一枚极细的金色戒指（细如发丝），
+右手腕戴一只极简的金色细链手链（链条1mm粗）。
 
 【姿态】
-她的身体微微转向画面右后方，
-左手自然垂落，右手优雅地抚在胸前位置（拇指食指轻拈祖母绿胸针），
-肩颈线挺拔有力但不僵硬，
-完美的天鹅颈呈现25度的优雅倾斜。
+她的上半身微微偏向画面右后方（呈现侧颜杀），
+左手轻轻搭在颈侧（手指自然弯曲修饰下颌线），
+右手放松垂落（仅露出手腕的金色细链），
+肩颈线挺拔但放松（不僵硬），
+天鹅颈呈现25度的优雅倾斜，
+锁骨深沟+蝴蝶骨在丝质吊带衫的领口若隐若现。
 
-【光影设计】
-主光源是来自画面左前方约45度的柔和侧光（色温约4000K，模拟博物馆射灯），
-在她的右脸颊形成柔和的伦勃朗三角光，
-左脸颊处于柔和的半阴影中（不是深黑而是带蓝调的灰），
-头发后方有一道微弱的轮廓逆光（勾勒出发丝边缘），
-颈部锁骨投下精致的解剖学阴影。
+【光影设计·韩系冷调高级】
+主光源是来自画面左前方约45度的柔和侧光（色温约5500K，模拟下午自然光），
+但通过白色柔光纸扩散后变成"奶油光"（非常柔和的散射光），
+在她的右脸颊形成柔和的明暗过渡（不是硬阴影，是奶油般的渐变），
+左脸颊处于柔和的半阴影中（带极淡的蓝调高级感），
+头发后方有一道微弱的轮廓逆光（勾勒出发丝边缘的金色光圈），
+锁骨处投下精致优美的阴影。
 
-【背景】
-深邃的黑色背景（不是纯黑，是带极轻微暗紫的"夜空黑"），
-背景上隐约可见模糊的金色光斑（散景，约5-7个，模拟博物馆夜景），
-没有任何具体物体，让人物完全突出。
+【背景·韩系简约时尚】
+纯净的奶咖色背景（不是纯白也不是纯灰，是带温度的"燕麦奶咖"），
+背景上有极轻微的光斑层次（仿佛阳光透过某物的光感），
+没有任何具体物体，让人物完全成为视觉中心，
+背景虚化至80%（柔和的散景）。
 
-【色彩分级】
-深酒红色（裙）+祖母绿（饰品）+瓷白肤色+夜空黑（背景）的四色对比，
-色调走Vogue杂志封面的深邃感，
-低饱和度但每个颜色都极其精准，
-画面整体呈现"古典油画 + 现代时装大片"的混合质感。
+【色彩分级·中式高级感】
+奶油白+燕麦色+浅金色+淡粉肤色+乌黑发色的高级配色，
+色调走IU专辑封面+Jennie时尚大片+刘诗诗杂志写真的混合美学，
+极低饱和度（接近黑白但保留微妙色彩）+暖调微调+柔和高光，
+画面整体呈现"韩国Vogue China联名高级感"质感。
 
 【拍摄参数感】
-中画幅Hasselblad H6D-100c拍摄质感，
-85mm f/1.4人像镜头，极浅景深仅面部锐利合焦，
-胶片颗粒感（Kodak Portra 800黑色调微调），
-8K超高清细节。
+中画幅富士GFX 100s拍摄质感，
+85mm f/1.4人像镜头，奶油般柔和的散景，
+低调电影感的胶片颗粒（Fujifilm Pro 400H暖调），
+8K超高清细节但保留韩系电影的"呼吸感"，
+画面构图遵循Vogue Korea的留白美学。
 
 【反向约束】
-不要磨皮塑料肌肤，不要过度网红化的尖下巴大眼睛，
-不要HDR过曝高光，不要广告片闪光灯硬光，
-不要饱和度过高，不要梦幻柔焦，
-不要AI典型对称僵硬感（左右脸要有微妙不对称），
-不要美颜滤镜效果，不要韩系厚粉底浓妆。
+不要欧美骨相（高鼻梁/深眼窝/方下颌全部去除），
+不要凤眼（要杏眼+鹿眼），
+不要油画感（要韩系电影感），
+不要35+成熟御姐脸（要看不出年纪的高级感），
+不要网红整容脸，
+不要厚妆容（要伪素颜氧气感），
+不要磨皮塑料肌（要奶油肌真实毛孔），
+不要HDR过曝，
+不要韩系厚粉底浓妆（要韩系裸妆高级感），
+不要刻意性感的姿势（要清纯藏高级），
+不要笑容超过2mm（要清冷氛围感）。
 
-电影海报级人像摄影，HBO高级剧集质感，A24电影色彩美学，
-《沙丘》《奥本海默》视觉级别。
+中国当代顶级颜值美学，韩系Vogue大片质感，
+小红书爆款"破圈神颜"级别，
+《镜双城》刘诗诗+《Solo》Jennie+《步步惊心》中式古典美的混合表达。
 ```
 
 ---
@@ -157,213 +196,260 @@
 ### 简化版（用于AI生视频锁定，英文版）
 
 ```
-A 27-year-old East Asian woman, perfect oval face with golden ratio
-proportions (14.5cm long, 13cm wide), natural willow-leaf eyebrows
-with soft peaks, standard phoenix eyes (3cm length, inner corners
-slightly upturned), deep brown irises with subtle blue undertone
-whites, double eyelids with 5mm natural fold, long lashes (9mm)
-curved naturally, straight nose bridge (0.8cm height), small
-rounded teardrop-shaped nose tip, naturally pink lips (upper:lower
-1:1.3 ratio with clear M-shaped Cupid's bow), porcelain skin with
-natural pinkish undertone, visible natural pores at T-zone, fine
-facial fuzz visible in side light, NO plastic-smooth skin.
+A 25-year-old Chinese East Asian woman with timeless beauty (looks
+both girlish and sophisticated), perfect Chinese aesthetic
+proportions: small oval face (13cm long, 11cm wide ratio 1.18),
+HIGH FOREHEAD (top of head to hairline 30%+ of head height — the
+key to top-tier beauty), short jaw with rounded oval jawline (NOT
+sharp triangular), soft cheekbones (NOT prominent or wide), gentle
+short V chin.
 
-Shoulder-length straight black hair with center part, natural
-healthy shine.
+Five features (Chinese + Korean fusion):
+- Natural wild brow shape (NOT plucked into willow leaf), light brown-
+black, almost flat with soft peak
+- ALMOND eyes (NOT phoenix eyes!), 2.8cm length, round and bright,
+deep brown irises with subtle honey undertone
+- Natural double inner eyelid 4mm fold (more delicate than Western)
+- Visible natural aegyo-sal (3mm wide eye-bag) — KEY Chinese beauty
+soul element
+- 10mm long lashes naturally upturned (NOT fake lash heavy)
+- Moderate Chinese nose bridge (NOT high Western), small round
+pearl-shaped nose tip (like Jennie)
+- Natural petal lips (NOT plump Western), pink with orange undertone,
+clear M-shaped Cupid's bow
+- Clear philtrum
 
-Wearing deep wine-red velvet high-neck floor-length dress with
-small emerald brooch at collar, single emerald earring on left ear,
-white gold minimalist ring on right ring finger, rose-gold Cartier
-Love bracelet on left wrist.
+Skin: TOP-TIER "cream skin" quality - warm-tone fair skin (NOT cold
+white), jelly + water-light + bouncy texture (like Korean idol
+filter made real), natural dewy highlights at nose tip and lip beads,
+5% natural pinkish "high altitude blush" at apple cheeks, very fine
+T-zone pores but boiled-egg smooth overall, NO matte/plastic, soft
+"no-makeup makeup" Korean oxygen quality.
 
-Pose: 45-degree facing camera with chin slightly raised (2 degrees),
-phoenix eyes half-lidded with cold sharp gaze, lips pressed into
-calm horizontal line, expression of innate dignity of a queen,
-NOT performed coldness.
+Hair: long straight jet-black hair (5cm below collarbone), lazy
+center part (one side slightly more than other), inward C-curl ends
+(Korean airy hairstyle), face-framing tendrils at temples falling
+to cheekbones, natural healthy matte black (NOT plastic shine),
+fluffy roots showing high crown.
 
-Lighting: Soft 45-degree side light from front-left (4000K museum
-spotlight quality), Rembrandt triangle on right cheek, soft shadow
-on left cheek with blue undertone, subtle rim light on hair edge.
+Expression: 30-degree turn to the right (more photogenic than full
+front), chin slightly tucked (Chinese elegance NOT Western lifted-
+chin pride), almond eyes looking calmly at camera with subtle
+"can't see you" detachment, "icy + ethereal" dual gaze, natural
+relaxed mouth with 2mm subtle upturn (not performed smile but
+content default), expression of "she's beautiful without knowing
+it" sophistication.
 
-Background: Deep "night sky black" (slight purple undertone),
-blurred golden bokeh (5-7 spots).
+Outfit (Korean fashion sophistication): minimal cream-white cashmere
+oversized blazer (5cm beyond shoulder), light beige silk camisole
+underneath showing collarbone valley + butterfly bones, same-tone
+straight tailored pants below (if shown).
 
-Style: Vogue magazine cover aesthetic, classical oil painting meets
-modern fashion editorial, Kodak Portra 800 film grain, Hasselblad
-medium format quality, 85mm f/1.4 portrait lens, extreme shallow
-depth of field.
+Accessories: single 5mm freshwater pearl stud on left ear, small
+gold thin hoop on right ear (asymmetric), no necklace, ultra-thin
+gold band on left ring finger, 1mm gold chain bracelet on right
+wrist.
 
-NEGATIVE: no plastic skin, no over-sharpened jawline, no big anime
-eyes, no HDR overexposure, no studio flash hard light, no
-oversaturated colors, no dreamy bokeh, no AI symmetric stiffness,
-no beauty filter, no Korean heavy makeup.
+Lighting: soft 45-degree front-left light (5500K) diffused through
+white silk into "cream light", soft cream gradient on right cheek,
+subtle blue-undertone shadow on left cheek (high-end coolness),
+weak rim light on hair edges, elegant collarbone shadow.
 
-Cinematic poster portrait, HBO premium drama quality, A24 film
-color grading.
+Background: pure oatmeal-cream tone (NOT white, NOT gray, warm
+"oat milk latte"), 80% blurred bokeh, minimal Korean editorial
+emptiness.
+
+Color grading: cream + oatmeal + soft gold + pink skin + jet black
+hair, IU album cover meets Jennie editorial meets Liu Shishi
+magazine aesthetic, very low saturation with warm shift, soft
+highlights.
+
+Style: Mid-format Fujifilm GFX 100s, 85mm f/1.4 with creamy bokeh,
+Fujifilm Pro 400H warm grain, 8K with Korean film breath, Vogue
+Korea white space composition.
+
+NEGATIVE: NO Western bone structure (no high nose bridge / deep eye
+sockets / square jaw), NO phoenix eyes (must be almond + deer eyes),
+NO oil painting feel, NO 35+ mature woman face, NO Korean idol
+overdone makeup, NO plastic smooth skin, NO HDR overexposure, NO
+deliberate sexy poses, NO smile bigger than 2mm.
+
+Contemporary Chinese top-tier beauty aesthetic, Korean Vogue
+editorial quality, Xiaohongshu "viral neck-snap beauty" tier, Liu
+Shishi + Jennie + classical Chinese beauty fusion.
 ```
 
 ---
 
-### 御姐版 · 不同场景变体
+### 高级清冷版 · 不同场景变体
 
-#### 变体1A · 商务场景（叶氏总部办公室）
-
-```
-她坐在一张深胡桃木办公桌后的高背真皮椅上，
-穿着米白色高领针织衫（领口有极简银丝刺绣）外搭奶咖色羊绒长款风衣（敞开未系带），
-下身米色阔腿西装裤+裸色尖头细高跟，
-左手轻搭在桌面上的MacBook Pro键盘旁，
-右手优雅地端着一杯白色骨瓷咖啡杯送至唇边但没喝，
-眼神微微下垂看向桌上的文件（眼睑投下完美的睫毛阴影），
-背景是叶氏总部落地窗外的龙城CBD天际线（清晨柔光）。
-
-光影：清晨7点的暖金色窗光从右侧大面积倾洒，
-形成"职业精英在晨光中处理事务"的电影开场感。
-
-气质关键：上位者+权力感+一丝不苟的精致。
-```
-
-#### 变体1B · 慈善晚宴场景（红毯）
+#### 变体1A · 商务场景（女主光环办公室）
 
 ```
-她站在红色丝绒地毯上，
-身后是金碧辉煌的水晶吊灯+米色大理石柱+红色丝绒帷幕，
-身穿一袭酒红色无肩带丝绒长晚礼服（鱼尾裙摆约2米），
-锁骨完美呈现"蝴蝶骨"形状，
-脖颈戴着一串极致简约的钻石项链（仅一颗1克拉主钻），
-左耳戴一只祖母绿水滴耳坠（与第一版核心款呼应），
-盘发：低马尾全部绾起+几缕碎发自然垂落颊侧，
-面妆：哑光裸色眼影+极淡的玫瑰唇釉，
-双手优雅地交叠在腰前（Audrey Hepburn式经典姿态），
-微微侧身看向画面右侧（仿佛被记者呼喊回头），
-嘴角带着0.5毫米的微妙弧度（不是笑，是"我知道你在拍我"的意识）。
+她坐在一张极简风的白色大理石办公桌后，
+身后是大面积落地窗外的城市天际线（柔焦）+一盆白色蝴蝶兰，
+身穿米白色西装套装（韩系oversized剪裁）+内搭白色丝质吊带，
+头发慵懒地披散+一缕被她下意识别到耳后（露出耳钉），
+左手轻搭在桌面MacBook键盘旁，
+右手优雅地端着一个磨砂玻璃水杯（不是咖啡杯，更高级），
+眼神微微下垂看向桌上的iPad（眼睑投下完美睫毛阴影），
+苹果肌处有自然的水光感（韩系晨光质感）。
 
-光影：红毯两侧闪光灯的硬光在她脸上形成戏剧化层次，
-但主光源是顶部钨丝灯的暖光（3200K），
-颈部钻石项链反射出细密的彩虹光斑。
+光影：清晨的奶油光从右侧大面积倾洒，在她身上形成"晨光女主"的电影感。
 
-气质关键：女王驾临+万众瞩目+不动声色的统治感。
+气质关键：女主光环+晨光女神+顶级氛围感+小红书"霸总女友"封面级。
+```
+
+#### 变体1B · 时尚硬照场景（杂志封面）
+
+```
+她站在一面纯米色的拍摄背景前（Vogue China风格），
+身穿一件Bottega Veneta风的奶油色羊绒oversized毛衣（毛衣袖子盖到指尖），
+下身是黑色丝质阔腿西装裤，
+脚穿一双裸色尖头细高跟（露出脚踝纤细线条），
+头发处理成韩系空气刘海+低马尾扎到耳后，
+妆容是Jennie式的橘调暖妆（眼影暖橘+唇釉红橘+腮红粉橘），
+左手插在毛衣口袋里（自然垂落），
+右手优雅地拨弄发丝（手腕呈现优美弧度），
+面对镜头但下巴微抬（杂志大片标准pose）。
+
+光影：标准时尚硬照"分割光"+顶光+下方反光板，
+鼻底投下精致的小三角阴影，整张脸毫无瑕疵。
+
+气质关键：杂志封面级女明星+破圈神颜+刷屏级硬照。
 ```
 
 #### 变体1C · 极简白色背景（角色定妆照）
 
 ```
-纯净的浅灰背景（不是纯白，是带温度的浅暖灰），
-她正面对镜头但下巴微抬约3度（轻微俯视感），
-身穿黑色高领针织衫（极简款），
-头发完全梳到脑后绾成低发髻（露出完整的天鹅颈+耳廓），
-仅佩戴小颗珍珠耳钉（直径4mm），
-完全无项链，
-面妆：裸妆+珍珠唇釉（嘴唇有自然的水润光泽），
+纯净的奶咖色背景（不是纯白）+完美的60%灰反射板补光，
+她正面对镜头但下巴微微内收约2度，
+身穿黑色高领针织衫（极简款贴身但不紧），
+头发完全披散+两边各一缕碎发自然垂落颊侧（修饰脸型），
+妆容是顶级"伪素颜"（裸色眼影+水光唇釉+自然腮红），
+仅佩戴小颗淡水珍珠耳钉，
 眼神平视前方（绝对的眼神交流），
-表情完全克制（嘴唇紧抿成水平直线）。
+表情完全克制但带极淡的微笑（嘴角2mm弧度），
+锁骨深沟在领口若隐若现。
 
-光影：标准时尚摄影的"蝴蝶光"布光（顶光+下方反光板），
-鼻底投下精致的小三角阴影。
+光影：标准时尚摄影的"奶油光"布光（柔光顶光+反光板补底光），
+肌肤呈现极致的"水煮蛋"光感。
 
-气质关键：角色定妆+灵魂直击+绝对的存在感。
+气质关键：角色定妆+灵魂直击+顶级颜值的存在感+小红书"姐妹花头像"必备。
 ```
 
 ---
 
-## 🎭 第二版 · 温柔知性版（QINGYUE_GENTLE）
+## 🌷 第二版 · 氧气甜美版（QINGYUE_OXYGEN_SWEETIE）
 
-> **定位**：叶氏未亡人·内敛克制·心思深沉·楚楚可怜
-> **氛围词**：温柔、知性、隐忍、心碎、若隐若现的脆弱
-> **参考气质**：周冬雨（《七月与安生》安生）+ 章子怡（《一代宗师》宫二）的内敛感
+> **定位**：少女感+清纯氧气+男友视角+恋爱回路启动
+> **氛围词**：氧气、甜美、心动、初恋、白月光、令人想保护
+> **参考坐标**：章若楠（《一闪一闪亮星星》）的氧气感 + 白鹿（《周生如故》）的鹿系眼 + 赵今麦的天然清纯 + IU的甜美氛围 + 张元英的"幼态高级感"
+> **使用场景**：暧昧戏/居家戏/恋爱回路戏/白月光戏
 
-### 完整提示词（电影杂志大片版）
+### 完整提示词（恋爱回路爆款版）
 
 ```
-一张超写实电影级人像摄影杰作，主角是一位27岁东亚女性。
+一张超写实顶级颜值人像摄影，主角是一位让人一眼心动的25岁中国东亚女性。
 
-【人物核心描述】
-（与第一版完全相同的骨相和五官——保持角色一致性的核心）
-她有着完美的鹅蛋脸轮廓，
-天生柳叶眉，
-标准凤眼（瞳孔深棕色，眼白清澈带蓝调），
-内双偏外双的5mm褶宽眼皮，
-长睫毛根根分明自然弯翘约9mm，
-精致鼻梁，
-天生淡粉色双唇。
+【人物核心描述·与第一版完全相同的骨相】
+（保持角色一致性的核心：小鹅蛋脸/高颅顶/短下颌/平柔颧骨/短V下巴）
+她有着第一版完全一致的中式骨相天花板，
+但氛围感呈现出"少女+心动+初恋"的甜美质感（与第一版的"清冷高级"形成情绪对比）。
 
-肤质：瓷白带粉调，鼻翼T区自然毛孔可见，
-但比第一版稍显"柔软"——颧骨处的天然粉调更明显（约+10%），
-透出一丝"刚哭过又强忍住"的微妙湿润感。
+【五官·韩系氧气甜美版】
+（基础五官与第一版完全一致——杏眼+卧蚕+花瓣唇+小巧鼻头）
+但本版眼神更柔和（瞳孔反射出更多光斑，呈现"汪汪水眼"），
+卧蚕在微笑时更明显（呈现"笑眼弯弯"的氧气感），
+唇色比第一版更红润（淡粉橘调饱和度+10%，呈现"刚吃完樱桃"的健康血色），
+苹果肌粉调比第一版重一档（呈现"刚刚跑完步"的少女红晕，约15%粉调）。
 
-【发型】
-齐肩黑色微卷长发（不是直发），
-卷度是非常自然的"刚睡醒"或"被风吹过"质感，
-左侧一缕头发垂到锁骨前方，
-右侧一缕被她下意识别到耳后（露出耳尖）。
+【发型·韩系氧气感+心动碎发】
+她有一头自然微卷的乌黑长发（长度到锁骨下8cm，比第一版稍长），
+分中缝但比第一版更慵懒（八字刘海自然垂落到颧骨上方），
+发尾呈现"刚刚被风吹过"的自然空气感（不是死板的卷度），
+两侧鬓角有更明显的"心动碎发"垂落（这是引发观众"心动反应"的视觉密码），
+发丝在光下呈现真实的"奶咖巧克力"色（黑色中带极淡棕调，韩系挑染感），
+头顶发根处自然蓬松显高颅顶。
 
-【表情·核心气质】
-她侧脸面对画面（约70度侧脸），
-凤眼微微低垂看向画面右下方（不是看镜头），
+【表情·氧气感心动瞬间】
+她侧脸面向画面（约70度侧脸，露出完美的下颌线+耳廓+耳后碎发），
+杏眼微微下垂看向画面右下方（仿佛在看什么小动物或在发呆），
 长睫毛在颧骨上方投下细密的扇形阴影，
-嘴唇微微张开约2毫米（不是露出牙齿，是放空时的自然微启），
-眉心毫无紧锁但有一抹淡淡的"远方感"——
-她仿佛在思念什么人或什么事，
-那种"明明强大却忍着不哭"的克制感，
-让观众第一眼就想保护她。
+嘴角不自觉地上扬5mm形成自然的"无意识微笑"（不是社交假笑，是内心愉悦的本能反应），
+卧蚕因为微笑而更明显（笑眼弯成月牙形），
+鼻尖微微前倾（暗示她在专注什么），
+整个面部表情呈现一种"她在自己的世界里很开心"的氛围——
+让看到的人产生"想保护她+想让她笑"的心动反应。
 
-【关键细节·泪光】
-她的右眼下方眼袋处有一颗极微小的水珠（约1mm直径，可能是泪水可能是晨露），
-在光线下呈现晶莹剔透的反光，
-但她的脸上没有任何"哭过的痕迹"（眼睛不红、鼻子不红）——
-这是"刚刚才有一滴泪"或"还没意识到自己在流泪"的极致诗意瞬间。
+【关键细节·心动元素】
+她的耳后挂着一只白色无线耳机（韩系日常感+暗示她在听喜欢的音乐），
+左耳前的鬓角碎发被她下意识别到耳后（这个动作是"少女感"的灵魂），
+左肩处可以看到一抹自然的"刚跑完步的微汗"光泽（非常淡的水光），
+锁骨深沟处放着一颗小小的痣（极美的"美人痣"，约2mm）。
 
-【服装】
-身着一件柔软的米白色羊绒针织高领毛衣（不是紧身款，是宽松温柔款），
-领口稍稍翻折露出锁骨上方的肌肤，
-肩部柔软地垂落（毛衣比她的肩宽多约10cm的oversized感），
-下身是简单的米色阔腿垂坠裙（看不见鞋）。
+【服装·韩系日常少女感】
+她身着一件超温柔的奶白色泡泡袖针织开衫（领口稍敞露出锁骨），
+内搭一件浅蓝色基础款短T（露出一小段腰部线条+小腹平坦的暗示），
+下身（画面可不出现）是浅色高腰阔腿牛仔裤+小白鞋，
+整套穿搭呈现"韩系大学生日常+小红书博主"的衣品。
 
-【饰品】
-左手无名指戴一枚极细的白金戒指（婚戒款式但非主婚戒），
-右手腕戴一只极纤细的银色手链（链条约1mm粗）。
+【饰品·心动小心机】
+她戴着一只白色无线耳机（一个戴在耳上一个挂在锁骨前的耳机线，韩系穿搭核心元素），
+颈间挂一根极细的银色项链（坠子是一颗小小的星星，约5mm），
+左手腕戴一只韩系串珠手链（淡粉色+珍珠白+银色金属珠交替），
+左手无名指无戒指（暗示单身/可恋爱），
+左耳戴一只小颗珍珠耳钉（直径4mm）。
 
-【姿态】
-她坐在一把米白色的羊绒单人沙发上，
-双腿优雅地侧坐（双膝并拢偏向画面左侧），
-左手轻轻搭在沙发扶手上（手指自然弯曲），
-右手放在大腿上托着一本翻开的精装书（书页是奶黄色羊皮纸质感），
-但她的目光并没有看书，而是飘向窗外（画面右下方）。
+【姿态·心动瞬间捕捉】
+她坐在一家文艺咖啡馆的临窗位置（背景虚化），
+左手撑着脸颊（手肘搭在木质桌面上，手指自然弯曲贴在颧骨下方），
+右手握着一杯渐变粉色的草莓拿铁（杯子上有奶油+一颗草莓装饰），
+她微微低头看着杯子（仿佛在思考要不要喝），
+身体微微前倾（呈现"专注的少女"姿态），
+肩膀放松自然垂落（无任何僵硬感）。
 
-【光影设计】
-主光源是来自画面右侧的柔和窗光（色温约5500K，清晨10点自然光），
-透过白色薄纱窗帘形成柔焦感的扩散光，
-在她的左半脸形成柔和的明暗过渡（不是硬阴影），
-右脸完全沐浴在温柔晨光中，
-头发的卷曲处反射出真实的健康光泽。
+【光影设计·恋爱滤镜柔光】
+主光源是来自画面右侧的柔和窗光（色温约5500K，下午3点的金色阳光），
+但通过咖啡馆的白色窗帘+绿植扩散后变成"恋爱滤镜光"（极柔的散射光），
+在她的左半脸形成温柔的明暗渐变（不是硬阴影），
+右半脸完全沐浴在金色阳光中（脸颊+发丝镶上一圈金边），
+锁骨处的肌肤呈现真实的水光感，
+咖啡杯的热气在画面中形成柔和的散景光晕。
 
-【背景】
-温暖的米白色家居环境，
-画面右后方虚化可见落地窗的轮廓+白色薄纱窗帘+一盆绿植（约30%虚化)，
-画面左后方虚化可见一面奶白色书墙（约80%虚化只剩颜色和模糊层次）。
+【背景·韩系咖啡馆氛围】
+温暖的咖啡馆环境，
+画面右后方虚化可见落地窗外的法国梧桐+暖色街景（约70%虚化），
+左后方虚化可见咖啡馆的木质书架+几本书+绿植（约80%虚化只剩颜色和模糊层次），
+整体氛围"韩剧《咖啡王子一号店》+章若楠电影《一闪一闪亮星星》"的咖啡馆场景。
 
-【色彩分级】
-米白+奶咖+瓷白肤色+一抹绿（背景植物）的温柔系，
-色调走《诺丁山》《其后》等温柔文艺片的柔光美学，
-低饱和度+暖色调偏移+柔和高光，
-画面整体呈现"清晨阳台读书的温柔时刻"质感。
+【色彩分级·恋爱回路温柔系】
+奶白+浅蓝+草莓粉+金色阳光+乌黑发色+淡粉肤色的温柔系，
+色调走《一闪一闪亮星星》《你是我的荣耀》《偷偷藏不住》等顶级国产偶像剧的甜剧美学，
+中等饱和度（比第一版高一档）+暖色调偏移+柔和高光，
+画面整体呈现"恋爱回路启动+心动瞬间"质感，让看的人脸红心跳。
 
 【拍摄参数感】
-中画幅Phase One IQ4拍摄质感，
+中画幅富士GFX 100s拍摄质感，
 85mm f/1.2人像镜头，奶油般柔和的散景，
-胶片颗粒感（Fujifilm Pro 400H暖调），
-8K超高清细节但保留胶片的"呼吸感"。
+胶片颗粒感（Kodak Portra 400暖调，韩系电影最爱），
+8K超高清细节但保留偶像剧的"少女滤镜呼吸感"，
+画面构图遵循韩剧的"心动构图"（人物偏左1/3+空白1/3）。
 
 【反向约束】
-不要磨皮塑料肌肤，不要刻意卖萌的表情，
-不要过度甜美的少女感（要呈现"成熟女性的脆弱"而非"小女生的柔弱"），
-不要过曝过亮的清新感（要保留电影级的层次），
-不要饱和度过高（米白+奶咖系要保持低饱和），
-不要AI典型的微笑（她不应该笑），
-不要梦幻光晕（柔光要真实）。
+不要欧美骨相，不要凤眼（要杏眼+鹿眼），
+不要35+成熟感（要"看不出年纪"的少女感），
+不要刻意卖萌的网红表情（要自然的氧气感），
+不要厚妆容（要伪素颜+水光感），
+不要磨皮塑料肌（要奶油肌+真实毛孔），
+不要HDR过曝，
+不要刻意性感（要清纯藏可爱），
+不要悲伤的表情（要"自己的世界很开心"的甜美），
+不要假笑（嘴角5mm要自然不刻意）。
 
-文艺电影质感人像，《诺丁山》《其后》《一代宗师》视觉级别，
-Vogue China情感大片美学。
+中国顶级偶像剧女主美学，韩剧《偷偷藏不住》视觉级别，
+小红书"恋爱回路"+"心动100%"爆款封面，
+章若楠+白鹿+赵今麦+IU+张元英的中式韩系混合美学。
 ```
 
 ---
@@ -371,138 +457,175 @@ Vogue China情感大片美学。
 ### 简化版（用于AI生视频锁定，英文版）
 
 ```
-The same 27-year-old East Asian woman (perfect oval face, willow-leaf
-eyebrows, phoenix eyes with deep brown irises, double eyelids 5mm
-fold, 9mm natural lashes, straight nose 0.8cm bridge, naturally pink
-lips 1:1.3 ratio), porcelain skin with slightly more visible pinkish
-undertone on cheekbones (+10%), suggesting subtle "just held back
-tears" emotional state.
+The same 25-year-old Chinese East Asian woman (small oval face,
+high forehead, short jaw, soft cheekbones, almond eyes 2.8cm,
+double inner eyelid 4mm, visible aegyo-sal 3mm, 10mm upturned
+lashes, small pearl nose tip, natural petal lips), but with
+"oxygen-girl + first-love + heartthrob" vibe (in contrast to V1's
+"icy sophistication").
 
-Shoulder-length naturally wavy black hair (not straight), one strand
-falling on collarbone, another tucked behind right ear.
+Same five features but:
+- Eyes more tender with more iris reflections (watery doe-eyes)
+- Aegyo-sal more prominent in smile (smiling-eye crescents)
+- Lips +10% saturation toward pink-orange (just-ate-cherry blood
+red)
+- Apple cheeks +10% pink (just-finished-running youthful blush 15%)
 
-Expression: 70-degree profile facing camera, phoenix eyes lowered
-looking toward bottom-right (NOT camera), long lashes casting soft
-fan-shaped shadow on cheekbone, lips slightly parted 2mm in dreamy
-stillness, no furrowed brow but a distant melancholic gaze.
+Hair: naturally wavy jet-black hair (8cm below collarbone, longer
+than V1), lazy center part with "8-shape bangs" falling to
+cheekbones, "windswept airy" ends (NOT stiff curls), more visible
+"heart-fluttering tendrils" at temples (the visual code that
+triggers viewer's "swoon reaction"), subtle brown undertone in
+black hair (Korean highlight feel), fluffy crown roots.
 
-KEY DETAIL: A tiny crystalline water droplet (1mm) under right eye,
-shimmering in light - "a single tear unconsciously emerging" without
-any signs of crying (eyes not red, nose not red).
+Expression: 70-degree side profile (showing perfect jawline + ear
++ tendrils), almond eyes looking down toward bottom-right (as if
+watching a small animal or daydreaming), long lashes casting fan
+shadow on cheekbone, mouth corners naturally upturned 5mm in
+"unconscious smile" (NOT social fake smile, internal joy reflex),
+aegyo-sal more prominent forming crescent eye-smile, nose tip
+slightly forward (suggesting focus), "she's happy in her own world"
+vibe — makes viewer feel "I want to protect her + make her smile".
 
-Wearing soft oversized cream-white cashmere turtleneck sweater
-(loose fit, +10cm beyond shoulder width), beige draping wide-leg pants.
+KEY DETAILS: white wireless earbuds (one in ear, one dangling near
+collarbone with cable — Korean street style code), ear-tendril
+tucked behind left ear (signature girlish gesture), faint dewy
+post-jog glow on left shoulder, tiny 2mm beauty mark in collarbone
+valley.
 
-Accessories: thin platinum band on left ring finger, ultra-thin
-silver chain on right wrist.
+Outfit: cream-white puff-sleeve knit cardigan (collar slightly open
+showing collarbone), light blue basic short tee inside (glimpse of
+flat waist), high-waist light-wash wide-leg jeans + small white
+sneakers (if shown), Korean university girl + Xiaohongshu blogger
+aesthetic.
 
-Pose: Seated on cream-white cashmere armchair, legs gracefully
-crossed to her left, left hand resting on armrest, right hand
-holding open hardcover book (cream-yellow vellum pages), but eyes
-drifting toward window (bottom-right of frame).
+Accessories: white wireless earbuds (signature), thin silver chain
+necklace with tiny 5mm star pendant, Korean beaded bracelet on left
+wrist (pink + pearl + silver alternating), NO ring on left ring
+finger (single status hint), 4mm pearl stud on left ear.
 
-Lighting: Soft window light from right (5500K, 10am morning sun)
-diffused through sheer white curtain, gentle gradient on left face,
-full warm glow on right face.
+Pose: seated by window in literary cafe, left hand cradling cheek
+(elbow on wooden table, fingers on cheekbone), right hand holding
+gradient pink strawberry latte (cream + strawberry topping), slightly
+looking down at cup (contemplating to drink), body leaning slightly
+forward (focused-girl posture), shoulders relaxed natural drop.
 
-Background: Warm cream-white home environment, blurred floor-to-
-ceiling window with sheer curtains and green plant (right back, 30%
-blur), blurred cream bookshelf wall (left back, 80% blur).
+Lighting: soft window light from right (5500K, 3pm golden afternoon)
+diffused through white curtain + greenery into "love-filter light"
+(extremely soft scattering), gentle gradient on left face, full
+golden glow on right face (gold-rim cheek + hair), real water-light
+on collarbone skin, soft bokeh halos from coffee steam.
 
-Color grading: Cream + caramel + porcelain skin + green accent,
-"Notting Hill" + "Mood for Love" tender cinematography, low
-saturation warm tones, soft highlights.
+Background: warm cafe environment, blurred floor-to-ceiling window
+with French sycamores + warm street view (right back, 70% blur),
+blurred wooden bookshelf + books + greenery (left back, 80% blur),
+"Cafe Prince Coffee Shop" + "A Little Mood for Love" K-drama meets
+Chinese sweet-romance-drama atmosphere.
 
-Style: Mid-format Phase One IQ4 quality, 85mm f/1.2 with creamy
-bokeh, Fujifilm Pro 400H warm grain, 8K detail with film breath.
+Color grading: cream + light blue + strawberry pink + golden sunlight
++ jet black + pink skin, "Hidden Love" / "Love Between Fairy and
+Devil" / "Twinkle Twinkle Little Star" top-tier C-drama sweet
+aesthetic, medium saturation (one notch higher than V1), warm shift,
+soft highlights, "love-circuit-activation" + "heart-flutter moment"
+vibe.
 
-NEGATIVE: no plastic skin, no cute/childish expressions, no overly
-sweet girliness (mature woman vulnerability NOT little girl
-weakness), no overexposed brightness, no oversaturation, no AI
-typical smile (she must not smile), no dreamy halos.
+Style: Mid-format Fujifilm GFX 100s, 85mm f/1.2 with creamy bokeh,
+Kodak Portra 400 Korean-film favorite warm grain, 8K detail with
+idol-drama "girlhood filter breath", K-drama "heartthrob composition"
+(subject left 1/3 + empty space 1/3).
 
-Literary film portrait quality.
+NEGATIVE: no Western bone structure, no phoenix eyes, no 35+ mature
+vibe, no posed cute fake expressions, no heavy makeup, no plastic
+skin, no HDR overexposure, no deliberate sexy, no sad expressions,
+no fake smile (5mm must be natural).
+
+Top-tier Chinese idol drama female lead aesthetic, K-drama "Hidden
+Love" visual reference, Xiaohongshu "love-circuit" + "heart-flutter
+100%" viral cover quality, Zhang Ruonan + Bai Lu + Zhao Jinmai + IU
++ Jang Wonyoung Chinese-Korean fusion beauty.
 ```
 
 ---
 
-### 温柔版 · 不同场景变体
+### 氧气甜美版 · 不同场景变体
 
-#### 变体2A · 雨天窗边场景（爆点情感戏）
-
-```
-她站在一扇巨大的法式落地窗前，
-右手指尖轻轻贴在湿漉漉的玻璃上，
-玻璃外是倾盆大雨+模糊的城市夜景灯光（霓虹色彩呈散景），
-身穿丝绸质感的米白色长袖连衣裙（裙摆垂落到地面），
-头发完全披散在肩后（自然微卷），
-她的侧脸正对着窗外（4分之3侧脸），
-眼神空洞地凝视雨幕，
-嘴唇紧抿但下唇微微颤动（暗示极度克制的悲伤），
-左眼眼角有一颗大颗的泪珠正在缓缓滑落（已经滑到颧骨位置），
-但她没有哭出声，也没有抬手擦泪。
-
-光影：窗外的雨幕+霓虹灯光透过玻璃在她身上投射出移动的水痕光影，
-室内是温暖的台灯柔光（来自画面左侧），
-形成"室内暖+室外冷"的双色温对比。
-
-气质关键：心碎到极致的克制+成年人的体面+无声的崩溃。
-```
-
-#### 变体2B · 早餐桌场景（日常温柔）
+#### 变体2A · 大学生日常（白月光校服感）
 
 ```
-她坐在大理石早餐桌前，
-身穿米色丝绸睡袍（领口微敞但不暴露），
-头发慵懒地披散+一缕被她随意别到耳后，
-左手撑着脸颊（手肘搭在桌面上），
-右手轻搅着面前白色骨瓷杯里的咖啡，
-眼神柔和地看着杯中漩涡（视线不在镜头），
-嘴角带着0.3毫米的极淡微笑（早晨的满足感），
-脸颊上还残留着未完全消退的睡眠潮红。
+她站在一所大学的银杏大道上（背景是金黄落叶+古典建筑），
+身穿白色泡泡袖衬衫+米色背心毛衣+格子百褶短裙+白色及膝袜+黑色玛丽珍鞋（韩系学院风），
+肩上斜挎一只米色帆布托特包（包上别着一枚樱花胸针），
+左手抱着几本书贴在胸前（暗示刚下课），
+右手轻撩耳后碎发（少女感经典动作），
+头发扎成低双马尾（每条扎一只浅粉色蝴蝶结），
+她回眸看向画面（仿佛听到有人叫她），
+杏眼瞬间瞪大（呈现"被叫到时的惊喜瞬间"），
+嘴角不自觉上扬3mm（意识到是熟人）。
 
-光影：清晨6点的窗光从右侧大面积倾洒，
-她的睡袍在光线下呈现真实的丝绸光泽（不是塑料反光），
-咖啡杯升腾的热气在面部前方形成柔和光晕。
+光影：秋日下午4点的金色斜阳从画面后方打入（逆光发丝勾金边），
+银杏叶的暖黄反光打亮她的面部。
 
-气质关键：私密的温柔+晨间的脆弱+亲密关系中才能看到的一面。
+气质关键：白月光+校园女神+心动瞬间+男主第一眼爱上的"那个人"。
 ```
 
-#### 变体2C · 黑白人像（艺术摄影版）
+#### 变体2B · 雪天围巾场景（韩剧女主级）
 
 ```
-纯黑白色调（不是后期降饱和，是原生黑白胶片质感），
-她的45度侧脸特写，
-头发全部梳到脑后绑成低马尾，
-她的眼睛紧紧闭上（不是睡觉，是冥想或忍住情绪），
-长睫毛在颧骨投下细密的影子，
-嘴唇微张（自然呼吸状态），
-脖颈线条修长优雅。
+她站在一个下着小雪的城市街角（背景是模糊的灯光+雪花），
+身穿米色羊绒长款大衣（韩系oversized款）+酒红色毛绒围巾（围到鼻尖下方），
+头戴一顶米色羊绒贝雷帽（侧戴露出耳朵），
+脸颊和鼻尖被冻得自然粉红（韩剧女主标配），
+睫毛上有几片极小的雪花（关键浪漫细节），
+她抬头看向飘雪的天空（露出整张脸+长长的天鹅颈），
+嘴角不自觉地上扬（被雪景治愈的瞬间），
+双手戴着米色毛绒手套+捧在胸前。
 
-光影：戏剧化的明暗对比（伦勃朗光），
-左半脸沐浴在硬光中，右半脸完全在阴影里，
-形成经典的黑白肖像艺术摄影。
+光影：黄昏的暖色街灯+冷色雪光的对冲，
+雪花在路灯光下呈现飘忽的散景，
+她的脸庞被暖光镀上一层"韩剧女主的圣光"。
 
-气质关键：艺术大片+灵魂直击+成熟女性的内涵。
+气质关键：韩剧女主+冬日暖意+被雪治愈+让人想买电影票的画面。
+```
+
+#### 变体2C · 居家慵懒场景（男友视角）
+
+```
+她半躺在一张奶白色的羊绒沙发上（沙发上有几只浅粉色抱枕），
+身穿一件超大号的奶白色男友风针织毛衣（领口稍敞露出锁骨+一边肩膀的肤色），
+下身（画面可不出现）是浅灰色羊绒短裤，
+手里捧着一只白色马克杯（杯口冒出热气），
+头发慵懒地散在沙发上+一缕被她随意别到耳后，
+右手食指无意识地轻轻摩挲杯沿（少女感细节），
+她微笑着看向画面（仿佛对面坐着她爱的人），
+眼神温柔得能滴出水来，
+卧蚕笑眯成完美的月牙形。
+
+光影：清晨的柔和窗光从画面右侧打入（薄纱窗帘扩散），
+她的毛衣在光线下呈现真实的羊绒蓬松感，
+皮肤呈现晨光中的"水煮蛋光泽"。
+
+气质关键：男友视角+居家女神+让人心化掉的笑+恋爱中的女人最美。
 ```
 
 ---
 
 ## 📊 两版对比速查表
 
-| 维度 | 第一版（清冷御姐） | 第二版（温柔知性） |
+| 维度 | 第一版（高级清冷） | 第二版（氧气甜美） |
 |------|------------------|------------------|
-| **核心定位** | 商业精英·上位者 | 内敛克制·若隐若现的脆弱 |
-| **氛围词** | 矜贵、距离感、不容侵犯 | 温柔、隐忍、楚楚可怜 |
-| **参考气质** | 刘亦菲《梦华录》+高圆圆 | 周冬雨+章子怡《一代宗师》 |
-| **眼神** | 半阖凤眼+冷冽锐利 | 微垂凤眼+远方感 |
-| **嘴唇** | 紧抿成水平直线 | 微张2mm的诗意 |
-| **发型** | 直发齐肩 | 自然微卷+一缕别耳后 |
-| **服装色调** | 深酒红+祖母绿 | 米白+奶咖 |
-| **环境色调** | 夜空黑+金光斑 | 米白家居+晨光 |
-| **光影** | 锐利侧光+伦勃朗 | 柔和窗光+扩散 |
-| **使用场景** | 商业戏/红毯戏/对峙戏 | 居家戏/思念戏/情感戏 |
-| **AI生图难度** | ⭐⭐⭐ | ⭐⭐⭐⭐（情感细节难） |
+| **核心定位** | 商业精英·高级冷感 | 少女感·心动瞬间·初恋白月光 |
+| **氛围词** | 清冷、高级、女主光环 | 氧气、甜美、心动、令人保护 |
+| **参考坐标** | 刘诗诗+Jennie+章若楠+张元英 | 章若楠+白鹿+赵今麦+IU+张元英 |
+| **眼神** | 平视+疏离 | 微垂+水汪汪+笑眼 |
+| **嘴唇** | 极淡微笑2mm | 自然氧气感5mm笑 |
+| **苹果肌粉调** | 5%（高级感） | 15%（少女红晕） |
+| **发型** | 长直发+慵懒中分 | 自然微卷+八字刘海+心动碎发 |
+| **服装色调** | 奶油白+米色+黑色 | 奶白+浅蓝+草莓粉 |
+| **环境色调** | 燕麦奶咖背景 | 文艺咖啡馆+银杏暖光 |
+| **光影** | 奶油光柔光 | 恋爱滤镜柔光+金色逆光 |
+| **使用场景** | 商务戏/红毯戏/正装戏 | 暧昧戏/居家戏/恋爱戏 |
+| **饱和度** | 极低（高级感） | 中等（甜美感+10%） |
+| **关键细节** | 锁骨深沟+蝴蝶骨+小痣 | 无线耳机+耳后碎发+鼻尖粉调 |
 
 ---
 
@@ -511,49 +634,73 @@ Literary film portrait quality.
 ### 1. 首次生成建议流程
 
 ```
-Step 1：先用"清冷御姐版"完整提示词生成3-5张
-Step 2：选定一张最满意的→保存为"林清月主参考图"
-Step 3：再用"温柔知性版"完整提示词生成3-5张
-Step 4：选定一张→保存为"林清月情感参考图"
-Step 5：所有视频生成都用这两张参考图垫底
+Step 1：先用"高级清冷版"完整提示词在即梦/MJ v6生成5-10张
+       （注意：MJ v6对中式审美最准，FLUX次之，即梦对韩系最好）
+Step 2：选定一张最满意的→保存为"林清月主参考图（公开形象）"
+Step 3：再用"氧气甜美版"完整提示词生成5-10张
+Step 4：选定一张→保存为"林清月暧昧参考图（情感戏专用）"
+Step 5：所有视频生成都用这两张参考图垫底（角色一致性提升70%+）
 ```
 
 ### 2. 不同集数对应版本
 
 | 集数 | 推荐版本 | 原因 |
 |------|---------|------|
-| 第1-5集 | 御姐版 | 初登场强势 |
-| 第6-10集 | 御姐版+温柔变体 | 浴室解毒戏开始软化 |
-| 第11-18集 | 50/50混用 | 与萧天暧昧期 |
-| **第19-20集** | **温柔变体B+御姐主版** | 早餐戏温柔/车内戏挑逗/危机戏惊恐 |
-| 第21-30集 | 御姐版主导 | 商战回归 |
-| 第31-40集 | 温柔版主导 | 感情线高潮 |
-| 第41-46集 | 御姐版（破损质感） | 决战戏 |
+| 第1-5集 | 高级清冷版 | 初登场强势商务感 |
+| 第6-10集 | 50/50混用 | 浴室解毒戏开始软化 |
+| 第11-18集 | 氧气甜美版主导 | 与萧天暧昧期 |
+| **第19集第一场（早餐戏）** | **氧气甜美版主导** | 居家温柔感 |
+| **第19集第二场（车内戏）** | **氧气甜美版+清冷变体** | 调情戏氧气感+怒怼时清冷 |
+| **第20集（追逐戏）** | **氧气甜美版（恐惧变体）** | 紧张感+脆弱保护欲 |
+| 第21-30集 | 高级清冷版主导 | 商战回归 |
+| 第31-40集 | 氧气甜美版主导 | 感情线高潮 |
+| 第41-46集 | 高级清冷版（破损质感） | 决战戏 |
 
-### 3. 提示词组合技巧
+### 3. AI生图工具推荐排序
 
-**当需要"清冷转温柔"**：
-- 用御姐版的服装和饰品 + 温柔版的表情和光影
-- 例：穿酒红丝绒裙 + 温柔垂眼+泪光 = 商场里的脆弱瞬间
-
-**当需要"温柔显锋芒"**：
-- 用温柔版的服装+发型 + 御姐版的眼神和姿态
-- 例：穿米白毛衣 + 半阖凤眼+下巴微抬 = 私下里的女王
+| 工具 | 中式审美准确度 | 韩系氛围感 | 推荐度 |
+|------|--------------|----------|--------|
+| **MJ v6** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | 顶级（首选） |
+| **即梦（字节跳动）** | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 中式韩系最佳 |
+| **FLUX 1.1 Pro** | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | 综合性强 |
+| **可灵图像** | ⭐⭐⭐ | ⭐⭐⭐ | 备用 |
 
 ---
 
 ## ⚠️ 常见错误及修正
 
-| 错误 | 修正 |
-|------|------|
-| AI把林清月画成韩系大眼网红 | 强调"凤眼3.0cm长+内眼角微挑+不是大圆眼" |
-| 五官过度对称僵硬 | 加"左右脸微妙不对称+真实人脸特征" |
-| 皮肤磨皮塑料 | 加"鼻翼T区自然毛孔+面部细绒毛+无磨皮" |
-| 表情过度甜美 | 加"嘴唇紧抿/微张2mm，绝对不要笑容" |
-| 服装颜色错误 | 强调精确色号（深酒红=#722F37 / 米白=#F5F0E8） |
-| 背景太华丽抢戏 | 强调"虚化30-80%/纯色背景/无具体物体" |
+| 错误 | 修正方案 |
+|------|---------|
+| AI画成欧美脸（高鼻深眼） | 强调"中式骨相+小山根+杏眼+短下颌+婴儿肥" |
+| 画成35+御姐脸 | 加"看不出年纪的25岁+少女感+幼态高级感" |
+| 画成网红整容脸 | 加"自然花瓣唇+鹅蛋下颌+无玻尿酸感" |
+| 画成韩系idol厚妆 | 加"伪素颜+水光肌+裸妆质感" |
+| 缺少高级感（像普通美女） | 加"高颅顶+蝴蝶骨+蝶骨+破圈神颜" |
+| 五官不像同一个人 | 必锁"杏眼2.8cm+卧蚕3mm+花瓣唇+珠形鼻头" |
+| 表情过于刻意 | 强调"无意识微笑+自然氧气感+不要假笑" |
+| 头发塑料感 | 加"哑光黑发+健康自然+韩系空气感" |
+
+---
+
+## 🎯 林清月的"灵魂细节"清单（必出现）
+
+无论哪个版本，以下细节必须出现以保持角色一致性：
+
+```
+✅ 高颅顶（头顶到发际线30%+）→ 顶级颜值密码
+✅ 杏眼+卧蚕（绝对不要凤眼）→ 中式美人灵魂
+✅ 小巧珠形鼻头 → 像Jennie的标志
+✅ 天然花瓣唇+M字唇珠 → 中式美人核心
+✅ 鹅蛋下颌线（不是尖锥）→ 反网红整容
+✅ 锁骨深沟+蝴蝶骨 → 顶级身材特征
+✅ 韩系空气感发型 → 区别于死板古典发型
+✅ 自然腮红+水光肌 → 奶油肌质感
+✅ "看不出年纪"的25岁 → 少女感+高级感双重质感
+✅ 无意识微笑（不假笑） → 顶级氛围感
+```
 
 ---
 
 > 📌 **本文件即林清月的"灵魂建模书"**
-> 配合 `角色Lock库_AI生视频用.md` 使用，可让她的所有出场都保持顶级颜值+一致性。
+> 配合 `角色Lock库_AI生视频用.md` 使用，可让她的所有出场都保持"破圈神颜+小红书爆款"级别。
+> 美学定位：**中国当代顶级颜值审美 + 韩系时尚高级感**，告别欧美油画风。
