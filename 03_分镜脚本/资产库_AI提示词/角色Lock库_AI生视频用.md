@@ -5,7 +5,7 @@
 
 ---
 
-## 🎭 凌云霄 · `SHAOTIAN_LOCK`
+## 🎭 萧天 · `SHAOTIAN_LOCK`
 
 ### 完整描述（首次出场使用）
 
@@ -34,7 +34,7 @@ fingers, posture relaxed yet predatory
 
 ---
 
-## 🎭 沈碧瑶 · `QINGYUE_LOCK`
+## 🎭 林清月 · `QINGYUE_LOCK`
 
 ### 完整描述（首次出场使用）
 
@@ -62,7 +62,7 @@ upright with restrained dignity
 
 ---
 
-## 🎭 周锋 · `ZHOUQING_LOCK`
+## 🎭 周青 · `ZHOUQING_LOCK`
 
 ### 完整描述（首次出场使用）
 
@@ -88,7 +88,7 @@ wrist, posture arrogant with predatory undertone
 
 ---
 
-## 🎭 苏婉清 · `YIYI_LOCK`
+## 🎭 楚依依 · `YIYI_LOCK`
 
 ### 完整描述
 
@@ -114,7 +114,7 @@ yet professional
 
 ---
 
-## 🎭 叶甜甜 · `SISI_LOCK`
+## 🎭 叶思思 · `SISI_LOCK`
 
 ### 完整描述
 
@@ -139,7 +139,7 @@ and youthful
 
 ---
 
-## 🎭 赵小清 · `XIAOLU_LOCK`
+## 🎭 赵小露 · `XIAOLU_LOCK`
 
 ### 完整描述
 
@@ -196,15 +196,15 @@ with maternal warmth
 
 ```
 【画面内容】
-- 主体位置与动作：沈碧瑶（QINGYUE_LOCK）站在宴会厅中央，
-  正向周锋（ZHOUQING_LOCK）递交合作合同...
+- 主体位置与动作：林清月（QINGYUE_LOCK）站在宴会厅中央，
+  正向周青（ZHOUQING_LOCK）递交合作合同...
 ```
 
 ### ❌ 错误做法
 
 ```
 【画面内容】
-- 主体位置与动作：沈碧瑶今天穿着红色礼服（与Lock库不一致）...
+- 主体位置与动作：林清月今天穿着红色礼服（与Lock库不一致）...
 ```
 
 > **若需更换服装**（比如温泉戏、睡衣戏等），需要专门标注新服装，并明确告知 AI"仅本场使用，下场恢复 Lock 库描述"。
@@ -213,7 +213,7 @@ with maternal warmth
 
 ## 🎬 服装变体记录（特殊场次）
 
-### 沈碧瑶
+### 林清月
 
 | 场景 | 集数 | 服装变体 |
 |------|------|---------|
@@ -224,7 +224,7 @@ with maternal warmth
 | 居家 | 第37集 | 吊带睡衣 |
 | 商会 | 第8集 | Lock库 |
 
-### 凌云霄
+### 萧天
 
 | 场景 | 集数 | 服装变体 |
 |------|------|---------|
@@ -234,7 +234,7 @@ with maternal warmth
 | 居家 | 第37集 | 黑色睡衣 |
 | 决战 | 第43-45集 | Lock库（破损版） |
 
-### 苏婉清
+### 楚依依
 
 | 场景 | 集数 | 服装变体 |
 |------|------|---------|
